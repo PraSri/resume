@@ -57,7 +57,7 @@
 % Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & #2 \\
+        \textbf{#1}       & #2                 \\
         \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -65,7 +65,7 @@
 \newcommand{\resumeSubheading}[4]{
     \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1} & #2 \\
+        \textbf{#1}       & #2                 \\
         \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -93,105 +93,90 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-\textbf{\href{https://sourabhbajaj.com/}{\Large Prakhar Srivastava}} & Email: \href{mailto:prasri510@gmail.com}{prasri510@gmail.com}\\
-\href{https://www.linkedin.com/in/prakhar-srivastava-b14lko}{www.linkedin.com/in/prakhar-srivastava-b14lko/} & Mobile: \href{tel:+918090438465}{+918090438465} \\
+  \textbf{\href{https://sourabhbajaj.com/}{\Large Prakhar Srivastava}} & Email: \href{mailto:prasri510@gmail.com}{prasri510@gmail.com}\\
+  \href{https://www.linkedin.com/in/prakhar-srivastava-b14lko}{www.linkedin.com/in/prakhar-srivastava-b14lko} & Mobile: \href{tel:+918090438465}{+918090438465} \\
 Bangalore, Karnataka, India
 \end{tabular*}
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
-\resumeSubHeadingListStart
+  \resumeSubHeadingListStart
 
-\resumeSubheading
-{Walmart Global Tech India}{Bengaluru, Karnataka, India}
-{Senior Software Engineer}{Aug 2022 - Present}
-\resumeItemListStart
-\resumeItem{TensorFlow}
-{TensorFlow is an open source software library for numerical computation using data flow graphs; primarily used for training deep learning models. Worked on APIs and performance for training models on Tensor Processing Units (TPU).}
-\resumeItem{Apache Beam}
-{Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines, as well as a set of language-specific SDKs for constructing pipelines and runners.}
-\resumeItemListEnd
 
-% --------Multiple Positions Heading------------
-%  \resumeSubSubheading
-%   {Software Engineer I}{Oct 2014 -- Sep 2016}
-%   \resumeItemListStart
-%      \resumeItem{Apache Beam}
-%        {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%   \resumeItemListEnd
+    \resumeSubheading
+       {Walmart Global Tech India}{Bengaluru, Karnataka, India}
+       {Senior Software Engineer}{Aug 2022 - Present}
+       \resumeItemListStart
+         \resumeItem{AdTech Catalog Data Management}
+            {Designed and implemented \textbf{Scala} based microservices and data pipelines,  collaborated with cross-functional teams to integrate it with existing platforms }
+         \resumeItem{Display Ads Inventory Management}
+            {Major contribution in inventory forecasting APIs powered by \textbf{Vespa} search, built on \textbf{Spring Boot}, enabling advertisers to bid efficiently on ad space to display ads}
+       \resumeItemListEnd
+    \resumeSubheading
+       {Paytm}{Noida, India}
+       {Senior Software Engineer}{May 2021 - Aug 2022}
+       \resumeItemListStart
+         \resumeItem{Recommendation Service}
+           {Architected Spring Boot microservice employing ElasticSearch for home page of PayPay to enable millions of users to search and locate nearby stores}
+         \resumeItem{User Wallet Service}
+           {Developed wallet service support millions of user base, to keep track of each user's transaction and earned rewards and cashback.}
+         \resumeItem{Stores Transactions Management}
+           {Developed \textbf{Kotlin} based services and schedulers for back office ops to manage merchants onboarding and maintaining applicable stores transactions}
+    \resumeItemListEnd
 
-%-------------------------------------------
+    \resumeSubheading
+      {Clearwater Analytics}{Noida, India}
+      {Software Development Engineer}{Feb 2020 - May 20213}
+      \resumeItemListStart
+        \resumeItem{Portfolio Management}
+          {Understood the \textbf{Java} based legacy system and contributed in new features development for ETLs and services for financial data management}
+    \resumeItemListEnd
 
-\resumeSubheading
-{Paytm}{Noida, India}
-{Senior Software Engineer}{May 2021 - Aug 2022}
-\resumeItemListStart
-\resumeItem{Notifications}
-{Service for sending email, push and in-app notifications. Involved in features such as delivery time optimization, tracking, queuing and A/B testing. Built an internal app to run batch campaigns for marketing etc.}
-\resumeItem{Nostos}
-{Bulk data processing and injection service from Hadoop to Cassandra and provides a thin REST layer on top for serving offline computed data online.}
-\resumeItemListEnd
+    \resumeSubheading
+      {Qualitest}{Noida, India}
+      {Software Engineer}{Jun 2018 - Feb 2020}
+      \resumeItemListStart
+        \resumeItem{US based News Website}
+          {Gained understanding of existing system implemented in \textbf{JAVA} and javascript and developed new features along with automation scripts to minimize regression impact}
+    \resumeItemListEnd
 
-\resumeSubheading
-{Clearwater Analytics}{Noida, India}
-{Software Development Engineer}{Feb 2020 - May 20213}
-\resumeItemListStart
-\resumeItem{Portfolio Management}
-{Created models for portfolio hedging, portfolio optimization and price forecasting. Also created a strategy backtesting engine used for simulating and backtesting strategies.}
-\resumeItem{QuantDesk}
-{Python backend for a web application used by hedge fund managers for portfolio management.}
-\resumeItemListEnd
-
-\resumeSubheading
-{Qualitest}{Noida, India}
-{Software Engineer}{Jun 2018 - Feb 2020}
-\resumeItemListStart
-\resumeItem{Research Assistant -- Machine Learning}
-{Research on machine learning for portfolio hedging and replication algorithms. Modeling low-risk \& continuous-return strategies. Developed the Python library QSTK.}
-\resumeItem{Teaching Assistant -- Computational Investing}
-{The online course on Coursera, had more than 100,000 students enrolled. It was featured on the 11 Alive News and the Atlanta Journal Constitution. Involved in creating assignment, exams and conducting recitation sessions. Also taught the on-campus version of the course.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------------
 \section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{AdTech Catalog Services}
-{Open source Python library for financial data analysis and machine learning for finance.}
-\resumeSubItem{AdTech Inventory Management System}
-{Data visualization of Git log data using D3 to analyze project trends over time.}
-\resumeSubItem{PayPay Stamp Card Application}
-{Music and movie recommender systems using collaborative filtering on public datasets.}
-\resumeSubItem{Reconciliation Tool}
-{Book that gives step-by-step instructions on setting up developer environment on macOS.}
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+     \resumeSubItem{AdTech Catalog Services}
+       {\textbf{Scala-based} microservices powered by \textbf{ElasticSearch}, under Data Management System for \textbf{Walmart AdTech Org} enabling advertisers and sellers to create display ads campaign on targeted audience.}
+     \resumeSubItem{AdTech Inventory Management System}
+       {\textbf{Java-based} microservice, powered by \textbf{Vespa} search engine, to manage and optimize ads inventory available for advertisers to buy ad space to display ads on \textbf{Walmart E-com} website based on forecasting on historical data}
+     \resumeSubItem{PayPay Stamp Card Application}
+       {Loyality Points type application for \textbf{Paytm's} Japan venture PayPay, built by highly scalable \textbf{Java and Kotlin} based microservices, employing \textbf{Kafka} and \textbf{AWS DynamoDb} to process and store millions of transactions }
+     \resumeSubItem{Data Reconciliation Tool}
+       {\textbf{Java} based internal system of \textbf{ETLs}, used by ops team and portfolio managers of \textbf{Clearwater Analytics} to reconcile financial data for various clients and companies.}
+  \resumeSubHeadingListEnd
 
 %
 %--------SKILLS------------
 \section{Skills}
-\resumeSubHeadingListStart
-\resumeSubItem{
-\textbf{Languages} }{JAVA, Scala, Kotlin, C++, Python, SQL}
-\resumeSubItem{
-\textbf{Frameworks/Libraries}}{: Spring Boot, Play, Akka, Apache Spark, Swagger, Junit, Jmeter}
-}
-\resumeSubItem{
-\textbf{Databases/Indexes}}{:  Mysql, DynamoDb, ElasticSearch, Solr, Apache Hive, Presto}
-}
-\resumeSubItem{
-\textbf{Technologies}}{: Microservices, Kafka, Redis, GCP, Docker, Kubernetes, Git, CI/CD pipelines, Airflow}
-}
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+     \resumeSubItem
+       {\textbf{Languages} }{JAVA, Scala, Kotlin, C++, Python, SQL}
+     \resumeSubItem
+       {\textbf{Frameworks/Libraries}}{: Spring Boot, Play, Akka, Apache Spark, Swagger, Junit, Jmeter}
+     \resumeSubItem
+       {\textbf{Databases/Indexes}}{: Mysql, DynamoDb, ElasticSearch, Solr, Apache Hive, Presto, Vespa}
+     \resumeSubItem
+       {\textbf{Technologies}}{: Microservices, Kafka, Redis, GCP, Docker, Kubernetes, Git, CI/CD pipelines, Airflow}
+  \resumeSubHeadingListEnd
 
 %-----------EDUCATION-----------------
 \section{Education}
-\resumeSubHeadingListStart
-\resumeSubheading
-{JSS ACADEMY OF TECHNICAL EDUCATION, NOIDA}{NOIDA, India}
-{B.Tech CSE;  GPA: 8.2/10}{Aug. 2014 -- July. 2018}
-\resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {JSS ACADEMY OF TECHNICAL EDUCATION, NOIDA}{Noida, India}
+      {B.Tech CSE; GPA: 8.2/10}{Aug. 2014 -- July. 2018}
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
