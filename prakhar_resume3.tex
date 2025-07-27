@@ -1,0 +1,190 @@
+%-------------------------
+% Resume in LateX
+% Author : Prakhar Srivastava
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & #2                 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & #2                 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\href{https://www.linkedin.com/in/prakhar-srivastava-b14lko}{\Large Prakhar Srivastava}} & Email: \href{mailto:prasri510@gmail.com}{prasri510@gmail.com}\\
+\href{https://www.linkedin.com/in/prakhar-srivastava-b14lko}{www.linkedin.com/in/prakhar-srivastava-b14lko} & Mobile: \href{tel:+918090438465}{+918090438465} \\
+Bangalore, Karnataka, India & \href{https://github.com/PraSri} {github.com/PraSri}\\
+
+\end{tabular*}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Professional Summary}
+\small{
+Senior Software Engineer with 7+ years of experience designing and implementing scalable microservices and data management systems.
+}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+{Walmart Global Tech India}{Bengaluru, Karnataka, India}
+{Senior Software Engineer}{Aug 2022 - Present}
+\resumeItemListStart
+\resumeItem{AdTech Catalog Data Management}
+{Architected and deployed 5+ \textbf{Scala}-based microservices and data pipelines for AdTech catalog data management,
+processing 1M+ search requests daily over 100M+ products and reducing system latency by 30\%}
+\resumeItem{Display Ads Inventory Management}
+{Major contribution in inventory forecasting APIs powered by \textbf{Vespa} search, built on \textbf{Spring Boot}, enabling  50+ advertisers to bid efficiently and increased ad revenue by 25\% for display ads}
+\resumeItemListEnd
+\resumeSubheading
+{Paytm}{Noida, India}
+{Senior Software Engineer}{May 2021 - Aug 2022}
+\resumeItemListStart
+\resumeItem{Recommendation Service}
+{Architected \textbf{Spring Boot} microservice employing \textbf{Elasticsearch} enabling 50M+ PayPay users to search and locate nearby stores on Home page}
+\resumeItem{User Wallet Service}
+{Developed wallet service to support tracking of all the 50M+ users transactions with earned rewards and cashbacks with 99.9\% uptime.}
+\resumeItem{Merchant Onboarding}
+{Developed \textbf{Kotlin} based services and schedulers for back office ops to manage 100K+ merchants with 10K+ new merchants monthly and reduced onboarding time by 60\%}
+\resumeItemListEnd
+
+\resumeSubheading
+{Clearwater Analytics}{Noida, India}
+{Software Development Engineer}{Feb 2020 - May 2021}
+\resumeItemListStart
+\resumeItem{Portfolio Management}
+{Enhanced the \textbf{Java} based legacy system and contributed in new ETL features improving data processing speed by 45\% }
+\resumeItemListEnd
+
+\resumeSubheading
+{Qualitest}{Noida, India}
+{Software Engineer}{Jun 2018 - Feb 2020}
+\resumeItemListStart
+\resumeItem{US based News Website}
+{Enhanced system stability by developing automation scripts using Java, reducing regression testing time by 50\% achieving test coverage of 95\% and improving deployment frequencies }
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{AdTech Catalog Services}
+{\textbf{Scala-based} microservices powered by \textbf{ElasticSearch}, under Data Management System for \textbf{Walmart AdTech Org} enabling 100K+ advertisers and sellers to create 10K+ monthly display ads campaign on targeted audience of 100M+ Walmart website users.}
+\resumeSubItem{AdTech Inventory Management System}
+{\textbf{Java-based} microservice, powered by \textbf{Vespa} search engine, to manage and optimize ads inventory available for 10K+ advertisers to buy ad space to display ads on \textbf{Walmart E-com} website based on forecasting on historical data with 99.9\% uptime}
+\resumeSubItem{PayPay Stamp Card Application}
+{Loyalty Points System for \textbf{Paytm's} Japan venture PayPay, built by highly scalable \textbf{Java and Kotlin} based microservices, employing \textbf{Kafka} and \textbf{AWS DynamoDb} to process and store 10M+ of transactions monthly. }
+\resumeSubItem{Data Reconciliation Tool}
+{\textbf{Java} based internal system of \textbf{ETLs}, used by ops team and portfolio managers of \textbf{Clearwater Analytics} to reconcile financial data for 100+ clients globally.}
+\resumeSubHeadingListEnd
+
+%
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\resumeSubItem
+{\textbf{Languages} }{Java, Scala, Kotlin, C++, Python, SQL}
+\resumeSubItem
+{\textbf{Frameworks}}{: Spring Boot, Play, Akka, Apache Spark, Kafka, Swagger, Junit}
+\resumeSubItem
+{\textbf{Databases}}{: MySQL, DynamoDB, Elasticsearch, Solr, Apache Hive, Presto, Vespa}
+\resumeSubItem
+{\textbf{Tools/Cloud}}{: GCP, AWS, Docker, Kubernetes, Git, Jenkins, Airflow, Redis, Jmeter, Maven, Gradle, Postman}
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{JSS ACADEMY OF TECHNICAL EDUCATION, NOIDA}{Noida, India}
+{B.Tech CSE; GPA: 8.2/10}{Aug. 2014 -- July. 2018}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

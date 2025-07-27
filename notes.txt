@@ -1,0 +1,4 @@
+
+
+docker build -t latex .
+docker run --rm -i -v "D:\MyProjects2025\resume\":/data latex pdflatex resumePer.tex

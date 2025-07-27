@@ -1,0 +1,146 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% --------------------------------------------------
+%               PACKAGE CONFIGURATION
+% --------------------------------------------------
+\moderncvstyle{classic}          % style options: 'casual', 'classic', 'banking'
+\moderncvcolor{blue}             % color options: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey', 'black'
+\usepackage[utf8]{inputenc}      % character encoding
+\usepackage[T1]{fontenc}         % output encoding
+\usepackage{babel}
+\usepackage{enumitem}            % tight itemize
+\setlist[itemize]{noitemsep,topsep=0pt}
+
+\usepackage[left=1.5cm, right=1.5cm, top=1.6cm, bottom=1.6cm]{geometry}
+\recomputelengths                   % required when changes are made to page layout lengths
+
+% --------------------------------------------------
+%               PERSONAL DATA
+% --------------------------------------------------
+\name{Prakhar}{Srivastava}
+\address{Bangalore, Karnataka, India}{}
+\phone[mobile]{+91~8090~438~465}
+\email{prasri510@gmail.com}
+\homepage{www.linkedin.com/in/prakhar-srivastava-b14lko}
+
+% --------------------------------------------------
+%               DOCUMENT START
+% --------------------------------------------------
+\begin{document}
+    \makecvtitle
+
+% --------------------------------------------------
+%               PROFESSIONAL SUMMARY
+% --------------------------------------------------
+    \section{Professional Summary}
+    Senior Software Engineer with \textbf{7+ years} of experience designing and deploying \textbf{scalable microservices}, real-time data pipelines, and high-throughput AdTech \& FinTech platforms. Proven ability to lead end-to-end architecture, integrate cross-functional systems, and deliver \textbf{business-critical solutions} that serve \textbf{50M+ users} and process \textbf{\$100M+ daily transactions} with \textbf{99.9\% uptime}.
+
+% --------------------------------------------------
+%               TECHNICAL SKILLS
+% --------------------------------------------------
+    \section{Technical Skills}
+    \cvitem{Programming}{
+        \textbf{Java}, \textbf{Scala}, Kotlin, Python, C++, SQL
+    }
+    \cvitem{Frameworks \& Libraries}{
+        Spring Boot, Play, Akka, Apache Spark
+    }
+    \cvitem{Databases}{
+        MySQL, DynamoDB, Elasticsearch, Vespa, Redis, Apache Hive, Presto
+    }
+    \cvitem{Cloud \& DevOps}{
+        Google Cloud Platform, Docker, Kubernetes, CI/CD Pipelines, Airflow, Git
+    }
+    \cvitem{Big Data \& Messaging}{
+        Apache Kafka, Microservices Architecture, Real-time Processing
+    }
+
+% --------------------------------------------------
+%               PROFESSIONAL EXPERIENCE
+% --------------------------------------------------
+    \section{Experience}
+    \cventry
+    {Senior Software Engineer}
+    {Walmart Global Tech India}
+    {Bengaluru, India}
+    {Aug 2022 -- Present}
+    {
+        \begin{itemize}
+            \item \textbf{AdTech Catalog Data Management:} Architected and deployed 5+ Scala microservices and data pipelines ingesting \textbf{200M+} catalog events/day, reducing catalog latency by \textbf{30\%}.
+            \item \textbf{Display Ads Inventory Management:} Built forecasting APIs (Spring Boot + Vespa) enabling advertisers to bid on ad space; improved inventory prediction accuracy by \textbf{25\%}, unlocking \textbf{\$10M+} monthly ad spend.
+        \end{itemize}
+    }
+
+    \cventry
+    {Senior Software Engineer}
+    {Paytm}
+    {Noida, India}
+    {May 2021 -- Aug 2022}
+    {
+        \begin{itemize}
+            \item \textbf{Recommendation Service:} Developed Spring Boot microservice with Elasticsearch powering PayPay home page search for \textbf{40M+ users}; reduced query latency by \textbf{35\%}.
+            \item \textbf{User Wallet Service:} Implemented highly available wallet handling \textbf{\$100M+} daily transactions with \textbf{99.99\%} accuracy and compliance.
+            \item \textbf{Stores Transaction Management:} Delivered Kotlin services and schedulers automating merchant onboarding; cut manual ops effort by \textbf{60\%}.
+        \end{itemize}
+    }
+
+    \cventry
+    {Software Development Engineer}
+    {Clearwater Analytics}
+    {Noida, India}
+    {Feb 2020 -- May 2021}
+    {
+        \begin{itemize}
+            \item Modernized Java legacy ETLs for portfolio data, increasing throughput by \textbf{2x} and saving \$250k/yr in compute costs.
+        \end{itemize}
+    }
+
+    \cventry
+    {Software Engineer}
+    {Qualitest}
+    {Noida, India}
+    {Jun 2018 -- Feb 2020}
+    {
+        \begin{itemize}
+            \item Enhanced a high-traffic U.S. news platform (Java + JavaScript); introduced automated regression scripts that cut release cycles by \textbf{20\%}.
+        \end{itemize}
+    }
+
+% --------------------------------------------------
+%               SELECTED PROJECTS
+% --------------------------------------------------
+    \section{Selected Projects}
+    \cvitem{AdTech Catalog Services}{
+        Scala microservices \& Elasticsearch enabling advertisers to create targeted campaigns, serving \textbf{50M+ SKUs}.
+    }
+    \cvitem{Inventory Management System}{
+        Java microservice with Vespa search forecasting ad inventory; boosted campaign success rate by \textbf{18\%}.
+    }
+    \cvitem{PayPay Stamp Card}{
+        High-scale loyalty platform (Java/Kotlin, Kafka, DynamoDB) processing \textbf{10M+} monthly transactions.
+    }
+    \cvitem{Data Reconciliation Tool}{
+        Java ETL suite for financial data reconciliation, reducing daily discrepancies by \textbf{95\%}.
+    }
+
+% --------------------------------------------------
+%               EDUCATION
+% --------------------------------------------------
+    \section{Education}
+    \cventry
+    {B.Tech.\, Computer Science \& Engineering (GPA: 8.2/10)}
+    {JSS Academy of Technical Education}
+    {Noida, India}
+    {Aug 2014 -- Jul 2018}
+    {}
+
+% --------------------------------------------------
+%               CERTIFICATIONS (OPTIONAL)
+% --------------------------------------------------
+% \section{Certifications}
+% \cvitem{2024}{Google Cloud Professional Cloud Architect (in progress)}
+
+% --------------------------------------------------
+%               END DOCUMENT
+% --------------------------------------------------
+\end{document}
