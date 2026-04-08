@@ -12,7 +12,7 @@ docker build -t sb2nov/latex .
 
 # docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex prakhar_resume_coup.tex
 
-docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex /Users/prakharsrivastava/Desktop/myprojects/resume/2026/prakhar_resume5.tex
+docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex prakhar_resume5.tex
 
 
 #docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex sourabh_bajaj_resume.tex
