@@ -14,5 +14,6 @@ docker build -t sb2nov/latex .
 
 docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex prakhar_resume5.tex
 
+docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex prakhar_resume6.tex
 
 #docker run --rm -i -v "$PWD":/data sb2nov/latex pdflatex sourabh_bajaj_resume.tex
